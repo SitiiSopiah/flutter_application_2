@@ -34,22 +34,45 @@ class Profil extends StatelessWidget {
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: Colors.blueAccent,
+              color: Colors.black,
             ),
           ),
           Text(
             'Kelas XI RPL 2',
-            style: TextStyle(fontSize: 16, color: Colors.blueAccent),
+            style: TextStyle(fontSize: 14, color: Colors.black),
           ),
 
           SizedBox(height: 20),
 
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: const [
-              Column(children: [Icon(Icons.call), Text('Call')]),
-              Column(children: [Icon(Icons.map), Text('Route')]),
-              Column(children: [Icon(Icons.share), Text('Share')]),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton.icon(onPressed: () {},
+                icon: const Icon (Icons.call),
+                label: const Text('Call'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  foregroundColor: Colors.white,
+                ),
+              ),
+              const SizedBox(width: 10),
+              ElevatedButton.icon(onPressed: () {},
+                icon: const Icon (Icons.route),
+                label: const Text('Route'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  foregroundColor: Colors.white,
+                ),
+              ),
+              const SizedBox(width: 10),
+              ElevatedButton.icon(onPressed: () {},
+                icon: const Icon (Icons.share),
+                label: const Text('Share'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  foregroundColor: Colors.white,
+                ),
+              ),
             ],
           ),
         ],
