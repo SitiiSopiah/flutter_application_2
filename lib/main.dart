@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/list_spasi.dart';
+import 'package:flutter_application_2/latihan3_spaced&longList.dart';
 
 
 void main() {
@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp( title: 'Aplikasi flutter',
-      home: SpacedList()
+      home: Latihan3()
     );
   }
 }

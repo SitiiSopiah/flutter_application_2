@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SpacedList extends StatelessWidget {
-  const SpacedList({super.key});
+class Latihan3 extends StatelessWidget {
+  const Latihan3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +23,20 @@ class SpacedList extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: List.generate(
                   itemCount,
-                  (index) => Card(
-                    margin: const EdgeInsets.all(8),
-                    color: Colors.blue[100 * (index + 2)], 
-                    child: SizedBox(
-                      height: 100,
-                      child: Center(child: Text('Item $index',
-                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)))
-                    )
-                ),
-              ))
+                  (index) {
+                    final colors = [Colors.blue, Colors.green, Colors.amberAccent, Colors.orange];
+                    return Card(
+                      margin: const EdgeInsets.all(8),
+                      color: colors[index % colors.length], 
+                      child: SizedBox(
+                        height: 100,
+                        child: Center(child: Text('Item $index',
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)))
+                      )
+                    );
+                  } 
+                )
+              )
             ),
           );
         }
