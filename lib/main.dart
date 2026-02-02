@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_application_2/latian.dart';
-import 'package:flutter_application_2/tugas.dart';
-
+import 'package:flutter_application_2/tugas_responsif.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,8 +10,8 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp( title: 'Aplikasi flutter',
-      home: Tugas()
-    );
+    return const MaterialApp(
+      title: 'Aplikasi flutter', 
+      home: TugasResponsif());
   }
 }
